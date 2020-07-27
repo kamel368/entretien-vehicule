@@ -12,8 +12,7 @@ before_action :set_vehicule, only: [:show, :edit, :update, :destroy]
 
 
   def create
-    @vehicule = Vehicule.new(client_params)
-    @vehicule.user = current_user
+    @vehicule = Vehicule.new(vehicule_params)
     if @vehicule.save
       redirect_to vehicule_path(@vehicule)
     else

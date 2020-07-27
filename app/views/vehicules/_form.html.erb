@@ -1,0 +1,9 @@
+<%= simple_form_for  @vehicules  do |f| %>
+  <%= f.input :marque %>
+  <%= f.input :modele %>
+  <%= f.input :immatriculation %>
+  <%= f.input :annee %>
+  <%= f.input :date_achat %>
+  <%= f.input :km_achat %>
+  <%= f.submit "Valider", class: "btn-outline-dark mt-2 btn-sm", style: "width: 100%" %>
+<% end %>
