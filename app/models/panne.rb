@@ -1,0 +1,2 @@
+class Panne < ApplicationRecord
+end
